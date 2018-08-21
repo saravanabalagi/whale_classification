@@ -1,3 +1,4 @@
+### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -23,7 +24,6 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-MANIFEST
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -41,20 +41,15 @@ htmlcov/
 .coverage
 .coverage.*
 .cache
+.pytest_cache/
 nosetests.xml
 coverage.xml
 *.cover
 .hypothesis/
-.pytest_cache/
 
 # Translations
 *.mo
 *.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
 
 # Flask stuff:
 instance/
@@ -76,7 +71,7 @@ target/
 .python-version
 
 # celery beat schedule file
-celerybeat-schedule
+celerybeat-schedule.*
 
 # SageMath parsed files
 *.sage.py
@@ -102,3 +97,20 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+
+# End of https://www.gitignore.io/api/python
+
+# Ignore entire .idea folder
+.idea/
+
+# Ignore exp files and model files
+**/exp_[0-9]*
+*.h5
+
+# Ignore errfile and outfile
+**/errfile
+**/outfile
+
+# Ignore raw data
+/data/**
